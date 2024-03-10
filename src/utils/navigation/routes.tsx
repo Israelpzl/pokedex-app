@@ -1,16 +1,16 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Home from '../../pages/pokedex';
+import Pokedex from '../../pages/pokedex';
 import Pokemons from '../../pages/pokemon';
 
 export const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <Home />,
+		element: <Pokedex />,
 	},
 
 	{
 		path: '/pokedex',
-		element: <Home />,
+		element: <Pokedex />,
 	},
 
 	{

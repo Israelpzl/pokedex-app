@@ -1,7 +1,8 @@
 const API_URL = 'https://pokeapi.co/api/v2';
 
 export const getAllPokemon = () => {
-	return fetch(`${API_URL}/pokemon?limit=1025`).then(response => {
+	//pokemon?limit=151
+	return fetch(`${API_URL}/pokemon`).then(response => {
 		return response.json();
 	});
 };
