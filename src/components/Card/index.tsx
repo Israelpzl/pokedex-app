@@ -5,9 +5,8 @@ const Card = ({ name, type, pokedex, onClick, icon }: any) => {
 	let _style: React.CSSProperties = {
 		borderRadius: '10px',
 		border: '2px solid black',
-		padding: '20px',
+		padding: '5x',
 		textAlign: 'center',
-		margin: '20px',
 		textTransform: 'capitalize',
 	};
 
