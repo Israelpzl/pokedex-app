@@ -8,6 +8,7 @@ const Card = ({ name, type, pokedex, onClick, icon }: any) => {
 		padding: '5x',
 		textAlign: 'center',
 		textTransform: 'capitalize',
+		boxShadow: '10px 7px 10px black',
 	};
 
 	if (type) {

@@ -6,3 +6,28 @@
     grid-template-rows: repeat(1fr);
     gap: 20px;
 }
+
+@media (min-width: 768px) {
+.card-list {
+       
+        grid-template-columns: 1fr 1fr 1fr;
+     
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-list {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+}
+
+
+@media (min-width: 1220px) {
+    .card-list {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+}
