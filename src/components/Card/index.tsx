@@ -1,7 +1,20 @@
 import './index.scss';
 import defaultPokemon from '../../assets/images/pokemon_default.png';
+import { Type } from '../../models/Pokemon';
 
-const Card = ({ name, type, pokedex, onClick, icon }: any) => {
+const Card = ({
+	name,
+	type,
+	pokedex,
+	onClick,
+	icon,
+}: {
+	name: string;
+	type: Type[];
+	pokedex: number;
+	onClick: any;
+	icon: string;
+}) => {
 	let _style: React.CSSProperties = {
 		borderRadius: '10px',
 		border: '2px solid black',

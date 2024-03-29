@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { Pokemon } from '../../models/Pokemon';
 import Card from '../../components/Card';
 import CardList from '../../components/CardList';
+import Header from '../../components/Header';
 
 const Pokedex = () => {
 	const navigate = useNavigate();
@@ -34,14 +35,17 @@ const Pokedex = () => {
 
 	return (
 		<>
-			<div className='content-home'>
+			<div className='pokedex-page-header'>
 				<h1>POKÉDEX</h1>
+			</div>
+
+			<div className='pokedex-page-content'>
 				<CardList>
 					{pokemons &&
 						pokemons?.map((poke: Pokemon, index: number) => (
 							<Card
 								key={index}
-								icon={poke?.sprites.other?.home.front_default}
+								icon={poke?.sprites.other?.home.front_default as string}
 								type={poke?.types!}
 								name={poke?.name}
 								pokedex={poke?.id}

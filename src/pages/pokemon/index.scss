@@ -1,5 +1,38 @@
 
-.content-pokemon{
-    padding: 16px;
+
+.pokemon-page{
+    margin: 0px;
+
+    &-header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #20B2AA;
+        justify-content: space-between;
+        text-transform: capitalize;
+
+        div{
+            padding: 10px;
+        }
+
+        img{
+            max-width: 100px;
+            max-height: 100px;
+            padding: 10px;
+        }
+
+        &__number{
+            display: flex;
+            justify-content: end;
+        }
+
+     
+    }
+
+    &-content{
+        padding: 16px;
+
+    }
+
 }
+
 
