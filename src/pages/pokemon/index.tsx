@@ -24,7 +24,7 @@ const Pokemons = () => {
 					<h3>{pokemon?.name}</h3>
 				</div>
 
-				<div>
+				<div className='pokemon-page-header__icon'>
 					<img
 						src={pokemon?.sprites.other?.home.front_default}
 						alt={pokemon?.name}
